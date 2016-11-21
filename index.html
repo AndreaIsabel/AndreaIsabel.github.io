@@ -20,14 +20,12 @@
      <div align="center">
        <!--<h2 class="espacio para input"> Aquí la cajita</h2>-->      
        <script>
-       function stampa()
-            {
-                var Secreto = document.getElementById('codigo').value;
-                alert(Secreto);
-                return false;
-            }
-      }
-    </script>
+          var person = prompt("Please enter your name", "Harry Potter");
+          if (person != null) {
+          document.getElementById("demo").innerHTML =
+          "Hello " + person + "! How are you today?";
+          }
+    </script> 
        <form id="frm1" action="form_action.asp">
          Ingresa el código secreto:<br>
           <input type="text" id="codigo" name="codigo" value=""><br>
