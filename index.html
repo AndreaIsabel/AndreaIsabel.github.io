@@ -20,11 +20,13 @@
      <div align="center">
        <!--<h2 class="espacio para input"> Aquí la cajita</h2>-->      
        <script>
-          var person = prompt("Please enter your name", "");
-          if (person != null) {
-          document.getElementById("demo").innerHTML =
-          "Hello " + person + "! How are you today?";
+          var person = prompt("Please enter your name");
+          alert(person);
+          if (person == 1) {
+          alert("sii");
           }
+         else 
+           alert("no");
     </script> 
        <form id="frm1" action="form_action.asp">
          Ingresa el código secreto:<br>
