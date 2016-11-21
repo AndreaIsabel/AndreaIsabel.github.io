@@ -18,13 +18,22 @@
     
     <section class="seccion">
      <div align="center">
-       <!--<h2 class="espacio para input"> Aquí la cajita</h2>-->
-       <form action="action_page.php">
+       <!--<h2 class="espacio para input"> Aquí la cajita</h2>-->      
+       <script>
+       function stampa()
+            {
+                var Secreto = document.getElementById('codigo').value;
+                alert(Secreto);
+                return false;
+            }
+      }
+    </script>
+       <form id="frm1" action="form_action.asp">
          Ingresa el código secreto:<br>
-          <input type="text" name="codigo"><br>
-          <input type="submit" value="Submit">
-      </form>
-</div>  
+          <input type="text" id="codigo" name="codigo" value=""><br>
+          <input type="submit" value="Submit" onclik="return stampa();">
+      </form>  
+    </div>  
       
      
     
