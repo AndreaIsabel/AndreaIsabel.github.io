@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
+    <script>
+        $(document).ready(function() {
+            $("#fname").keyup(function() {
+                if (this.value == "xim8b") {
+                    $("#mostrar").fadeIn();
+                }
+                else {
+                    $("#mostrar").fadeOut();
+                }
+            });
+        });
+    </script> 
+  
   <head>
     <meta charset="UTF-8">
     <title>Buscando a Pepo</title>
@@ -15,32 +28,9 @@
       <h1 class="project-name">Buscando a Pepo</h1>
       <h2 class="project-tagline"></h2>
     </section>
-    
-    <section class="seccion">
-     <div align="center">
-       <!--<h2 class="espacio para input"> Aquí la cajita</h2>-->      
-       <script>
-          var person = prompt("Please enter your name");
-          if (person == 1){display: var;}
-         else 
-           display: "no";
-    </script> 
-       <form id="frm1" action="form_action.asp">
-         Ingresa el código secreto:<br>
-          <input type="text" id="codigo" name="codigo" value=""><br>
-          <input type="submit" value="Submit" onclik="return stampa();">
-      </form>  
-    </div>  
-      
-     
-    
-      <!--
-      <form>
-        Ingresa el código secreto:<br>
-        <input type="text" name="codigo"><br>
-      </form>*/
-      -->
-   </section>
+    <p>Código: <input type="text" id="fname"></p>
+    <p id="mostrar" style="display:none;" ><iframe width="560" height="315" src="https://www.youtube.com/embed/_NfnXdXpjL0" frameborder="0" allowfullscreen></iframe></p>
+
  </body>
 </html>
    
